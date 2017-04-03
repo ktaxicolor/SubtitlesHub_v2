@@ -1,11 +1,23 @@
+
+// CORE DEPS
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// MATERIAL DESIGN MODULES
+import { MaterialModule } from '@angular/material';
+
 
 import { AppComponent }  from './app.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  imports:      [ 
+    BrowserModule,
+    MaterialModule
+  ],
+  declarations: [ 
+    AppComponent 
+  ],
+  bootstrap:    [ 
+    AppComponent 
+  ]
 })
 export class AppModule { }
